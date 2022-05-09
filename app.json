@@ -10,18 +10,18 @@
         "LEGENDX22"
     ],
     "website": "",
-    "success_url": "https://telegram.dog/LEGENDX22",
+    "success_url": "Url Gir",
     "env": {
         "BOT_TOKEN": {
-            "description": "You Telegram Bot Token from @BotFather",
+            "description": "5385564706:AAGVN2h_h_1LU4MrwfUq8IUFCnv4MqrvR2M",
             "value": ""
         },
         "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
+            "description": "44aa62eb73c6869d4c6493b33342c146",
             "value": ""
         },
         "APP_ID": {
-            "description": "Your API ID from my.telegram.org",
+            "description": "17165647",
             "value": ""
         }
     },
