@@ -13,15 +13,15 @@
     "success_url": "Url Gir",
     "env": {
         "BOT_TOKEN": {
-            "description": "5385564706:AAGVN2h_h_1LU4MrwfUq8IUFCnv4MqrvR2M",
+            "description": "5369357228:AAEmg7hF-RvjX6fOc43J66_9xwT6VqyRpik",
             "value": ""
         },
         "API_HASH": {
-            "description": "44aa62eb73c6869d4c6493b33342c146",
+            "description": "3082cfb74e9ad4718a919b64b428701f",
             "value": ""
         },
         "APP_ID": {
-            "description": "17165647",
+            "description": "19418549",
             "value": ""
         }
     },
